@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/5c55b6f969.js" crossorigin="anonymous"></script>
 	<title>Document</title>
 </head>
 
@@ -50,7 +51,7 @@
 							Наши торты славятся своим неподрожаемым вкусом, красотой и любовью c который мы
 							печём.<br>Печём торты с 2002 года.
 						</p>
-						<a class="btn" href="#">Заказать</a>
+						<a class="btn btn-modal" href="#">Заказать</a>
 					</div>
 				</div>
 			</div>
@@ -66,9 +67,25 @@
 
 	<footer class="footer" id="footer">
 		<div class="container">
-			
+
 		</div>
 	</footer>
+
+	<div class="modal modal--close">
+		<div class="modal-container">
+			<div class="modal-header">
+				<h2 class="modal-header__title">CakeLand</h2>
+				<div class="btn-close">
+					<i class="fas fa-times"></i>
+				</div>
+			</div>
+			<div class="modal-content">
+				<form action="" class="modal-content__form">
+					<input type="submit" class="btn btn-submit btn__form">
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<!-- Scripts -->
 	<script src="scripts/main.js"></script>

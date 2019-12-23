@@ -9,6 +9,7 @@
 
 :root {
   --container: 1140px;
+  --modal-container: 700px;
 }
 
 body {
@@ -91,3 +92,63 @@ li {
 }
 
 // /Header
+
+// Modal
+
+.modal {
+  color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--modal-container);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border-bottom: 3px solid #ffffff;
+  &-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-close {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  &-container {
+    max-width: var(--modal-container);
+    padding: 40px;
+  }
+  &--open {
+    display: block;
+    z-index: 1;
+    animation: openModalWindow 2s;
+  }
+  &--close {
+    display: none;
+    z-index: -1;
+  }
+}
+
+// /Modal
+
+// Animation
+
+// Modal Window Animation
+@keyframes openModalWindow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+// /Modal window animation
+
+// /Animation
